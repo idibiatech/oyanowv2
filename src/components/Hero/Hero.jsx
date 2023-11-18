@@ -1,6 +1,7 @@
 import herobike from "../../assets/images/herobike.png";
 import applebutton from "../../assets/icons/Button apple.png";
 import googlebutton from "../../assets/icons/Button google.png";
+import { motion } from "framer-motion";
 
 const Hero = () => {
 	return (
@@ -37,13 +38,26 @@ const Hero = () => {
 					</div>
 				</div>
 			</div>
-			<div class="right-hero-container hero-box">
+			<motion.div
+				initial={{
+					scale: 0.6,
+				}}
+				animate={{
+					scale: 1,
+				}}
+				transition={{
+					duration: 1,
+
+					ease: "backInOut",
+				}}
+				class="right-hero-container hero-box"
+			>
 				<img
 					class="section-images"
 					src={herobike}
 					alt="image of a delivery bike"
 				/>
-			</div>
+			</motion.div>
 		</div>
 	);
 };

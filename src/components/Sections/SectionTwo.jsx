@@ -2,6 +2,9 @@ import arrow from "../../assets/icons/arrow.png";
 import oyabike from "../../assets/images/ojabike.webp.png";
 import manMagnet from "../../assets/images/manmagnet.png";
 import chart from "../../assets/images/chart.png";
+import { motion } from "framer-motion";
+import { popInAnimation } from "../../Animations";
+
 const SectionTwo = () => {
 	return (
 		<section class="section-two">
@@ -26,9 +29,19 @@ const SectionTwo = () => {
 						</a>
 					</div>
 				</div>
-				<div class="two-box-right two-box">
-					<img class="section-images" src={oyabike} alt="bike icon" />
-				</div>
+				<motion.div class="two-box-right two-box">
+					<motion.img
+						variants={popInAnimation}
+						initial="initial"
+						whileInView="animate"
+						viewport={{
+							once: true,
+						}}
+						class="section-images"
+						src={oyabike}
+						alt="bike icon"
+					/>
+				</motion.div>
 			</div>
 
 			<div class="section-two-container two">
@@ -46,7 +59,17 @@ const SectionTwo = () => {
 					</div>
 				</div>
 				<div class="two-box-right two-box">
-					<img class="section-images" src={manMagnet} alt="" />
+					<motion.img
+						variants={popInAnimation}
+						initial="initial"
+						whileInView="animate"
+						viewport={{
+							once: true,
+						}}
+						class="section-images"
+						src={manMagnet}
+						alt=""
+					/>
 				</div>
 			</div>
 
@@ -65,7 +88,17 @@ const SectionTwo = () => {
 					</div>
 				</div>
 				<div class="two-box-right two-box">
-					<img class="section-images" src={chart} alt="" />
+					<motion.img
+						variants={popInAnimation}
+						initial="initial"
+						whileInView="animate"
+						viewport={{
+							once: true,
+						}}
+						class="section-images"
+						src={chart}
+						alt=""
+					/>
 				</div>
 			</div>
 		</section>

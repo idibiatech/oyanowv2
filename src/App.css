@@ -376,7 +376,43 @@ section four (download oyanow)    start
  */
 
 .section-four {
-	background-color: green;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+}
+.section-four .left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	height: 100%;
+	padding: 2rem;
+	/* background-color: red; */
+}
+.section-four .left h3 {
+	font-size: 3rem;
+}
+.section-four .left span {
+	color: var(--oya-orange);
+}
+.section-four .right {
+	display: flex;
+	justify-content: end;
+}
+.section-four .right img {
+	width: 15rem;
+}
+.section-four .section-four-icon-wrapper {
+	display: flex;
+	/* flex-direction: column; */
+	/* background-color: red; */
+	justify-content: start;
+}
+.section-four-icon-wrapper .storeIcon {
+	width: 8rem !important;
+	height: auto !important;
+	margin-right: 0.3rem;
 }
 /* 
 
@@ -706,12 +742,7 @@ pc
 	.section-two .two-box p {
 		margin: 1.5rem 0;
 	}
-	/* .section-two .apply-button a {
-		color: white;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-	} */
+
 	.section-two .two-box .apply-button {
 		width: 10rem;
 		height: 3rem;
@@ -736,6 +767,61 @@ pc
 		/* border-radius: 0px 0px 50px 50px / 0% 0% 5% 5%; */
 	}
 
+	.section-four {
+		flex-direction: row;
+		padding: 0;
+		justify-content: center;
+		align-items: center;
+
+		padding-left: 6rem;
+	}
+	.section-four div {
+		width: 100%;
+		height: 100%;
+	}
+	.section-four .left {
+		/* flex-direction: column; */
+
+		align-items: end;
+		justify-content: right;
+		/* padding: 6rem; */
+		flex-direction: column;
+	}
+	.section-four .left h3 {
+		font-size: 4rem;
+		text-align: start;
+		/* padding-left: 3rem; */
+	}
+	.section-four .left p {
+		text-align: start;
+		margin: 1rem 0;
+		width: 100%;
+		/* padding-left: 3rem; */
+	}
+
+	.section-four .right {
+		display: flex;
+		justify-content: end;
+	}
+	.section-four .right img {
+		width: 40rem;
+	}
+
+	.section-four .section-four-icon-wrapper {
+		display: flex;
+		/* flex-direction: column; */
+
+		justify-content: start;
+		align-items: start;
+	}
+	.section-four-icon-wrapper div {
+		width: auto;
+	}
+	.section-four-icon-wrapper .storeIcon {
+		width: 12rem !important;
+		height: auto !important;
+		margin-right: 0.5rem;
+	}
 	footer {
 		height: auto;
 		padding: 4rem 4.5rem;

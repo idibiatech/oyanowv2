@@ -201,18 +201,23 @@ nav {
 	font-family: var(--heading-font);
 	/* font-size: px; */
 }
+/* 
 
-.section-one {
-	height: 60vh;
-	text-align: center;
-	background-color: var(--oya-black);
+sections general style mobile 
+
+ */
+
+.section-one,
+.section-two,
+.section-three,
+.section-four {
+	padding: 2.5rem 2rem;
+	height: auto;
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	flex-direction: column;
-	overflow: hidden;
-	padding-bottom: 3rem;
+	justify-content: center;
 }
+
 .section-one h2 {
 	color: white;
 	padding: 2rem 0;
@@ -220,13 +225,6 @@ nav {
 
 /* carousel css  */
 
-.section-two {
-	padding: 2.5rem 2rem;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
 .section-two .top-Restaurants {
 	display: flex;
 	flex-direction: column;
@@ -339,6 +337,54 @@ nav {
 	/* padding-left: 3rem; */
 }
 
+/* 
+
+
+section three (blogs)    start
+
+
+ */
+
+.section-three {
+	background-color: #f2f2f2;
+}
+.section-three .blog-wrapper {
+	min-height: 4rem;
+	height: auto;
+	background-color: red;
+	width: 100%;
+	padding: 3rem 0;
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+}
+/* 
+
+
+section three (blogs)    end
+
+
+ */
+
+/* 
+
+
+section four (download oyanow)    start
+
+
+ */
+
+.section-four {
+	background-color: green;
+}
+/* 
+
+
+section four (download oyanow)    end
+
+
+ */
 footer li,
 a {
 	color: #12121299;
@@ -567,6 +613,13 @@ pc
  */
 
 @media screen and (min-width: 900px) {
+	.section-one,
+	.section-two,
+	.section-three,
+	.section-four {
+		height: auto;
+		padding: 5rem 5.5rem;
+	}
 	header {
 	}
 	nav {
@@ -682,6 +735,7 @@ pc
 	.section-two .three {
 		/* border-radius: 0px 0px 50px 50px / 0% 0% 5% 5%; */
 	}
+
 	footer {
 		height: auto;
 		padding: 4rem 4.5rem;

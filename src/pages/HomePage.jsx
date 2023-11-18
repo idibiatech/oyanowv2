@@ -1,6 +1,8 @@
 import Hero from "../components/Hero/Hero";
 import SectionOne from "../components/Sections/SectionOne";
 import SectionTwo from "../components/Sections/SectionTwo";
+import SectionThree from "../components/Sections/SectionThree";
+import SectionFour from "../components/Sections/SectionFour";
 
 const HomePage = () => {
 	return (
@@ -8,8 +10,12 @@ const HomePage = () => {
 			<header>
 				<Hero />
 			</header>
-			<SectionOne />
-			<SectionTwo />
+			<main>
+				<SectionOne />
+				<SectionTwo />
+				<SectionThree />
+				<SectionFour />
+			</main>
 		</>
 	);
 };

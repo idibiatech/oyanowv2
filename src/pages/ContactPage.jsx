@@ -9,7 +9,7 @@ const Contact = () => {
 		<>
 			<PagesHero text1={"contact"} text2="OyaNow" />
 			<>
-				<section class="section-one" id="contact-section-one">
+				<section class="section-one-about" id="contact-section-one">
 					<div class="section-one-wrapper">
 						<div class="section-one-top">
 							<h2>Get in touch with us!</h2>

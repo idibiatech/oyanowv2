@@ -109,7 +109,7 @@ section {
 	padding: 1.3rem 2rem;
 	height: auto;
 }
-.section-one {
+.section-one-about {
 	background-color: white;
 }
 .section-one-wrapper {
@@ -138,7 +138,7 @@ section {
 	justify-content: space-around;
 	/* padding: 0 4rem; */
 }
-.section-two h2 {
+.section-two-about h2 {
 	margin: 3rem 0;
 }
 .section-one-bottom-wrapper li {
@@ -148,7 +148,7 @@ section {
 .section-one-bottom-wrapper img {
 	width: 4rem;
 }
-.section-two {
+.section-two-about {
 	background-color: #f2f2f2;
 	display: flex;
 	flex-direction: column;
@@ -174,19 +174,19 @@ section {
 	align-items: center;
 }
 
-.section-two .one {
+.section-two-about .one {
 	background-color: #f9ca0d;
 	/* border-radius: 23px 24px 0 0; */
 }
-.section-two .two {
+.section-two-about .two {
 	background-color: #ffb843;
 }
-.section-two .three {
+.section-two-about .three {
 	background-color: #ea9900;
 	/* border-radius: 0 0 23px 24px; */
 }
 
-.section-two .four {
+.section-two-about .four {
 	background-color: #d28200;
 }
 
@@ -422,10 +422,10 @@ might change later when figma is updated
 		right: 1rem;
 	}
 
-	.section-one {
+	.section-one-about {
 		padding: 4rem 5rem;
 	}
-	.section-one h2 {
+	.section-one-about h2 {
 		margin: 1rem 0;
 		font-size: 3rem;
 	}
@@ -444,7 +444,7 @@ might change later when figma is updated
 		width: 6rem;
 	}
 
-	.section-two h2 {
+	.section-two-about h2 {
 		font-size: 2rem;
 	}
 
@@ -622,7 +622,7 @@ pc
 		flex-direction: column;
 	}
 
-	.section-one {
+	.section-one-about {
 		padding: 4rem 6rem;
 	}
 

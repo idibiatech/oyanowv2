@@ -8,7 +8,7 @@ const AboutPage = () => {
 		<>
 			<PagesHero text1={"About"} text2="OyaNow" />
 			<>
-				<section class="section-one">
+				<section class="section-one-about">
 					<div class="section-one-wrapper">
 						<div class="section-one-top">
 							<h2>Who are we?</h2>
@@ -38,7 +38,7 @@ const AboutPage = () => {
 						</div>
 					</div>
 				</section>
-				<section class="section-two">
+				<section class="section-two-about">
 					<h2>Our delivery fee</h2>
 					<div class="section-two-outer-wrapper">
 						<div class="section-two-inner-top">

@@ -1,3 +1,6 @@
+import applestore from "../../assets/icons/apple.png";
+import googlestore from "../../assets/icons/gplay.png";
+
 const Footer = () => {
 	return (
 		<footer>
@@ -48,12 +51,12 @@ const Footer = () => {
 					<ul>
 						<li>
 							<a href="https://apps.apple.com/ng/app/oyanow/id1248784384">
-								<img src="./assets/icons/apple.png" alt="" />
+								<img src={applestore} alt="" />
 							</a>
 						</li>
 						<li>
 							<a href="https://play.google.com/store/apps/details?id=com.g360synergy.oyanow">
-								<img src="./assets/icons/gplay.png" alt="" />
+								<img src={googlestore} alt="" />
 							</a>
 						</li>
 					</ul>

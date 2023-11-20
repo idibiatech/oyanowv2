@@ -15,55 +15,6 @@ header {
 	height: 100%;
 	background-color: gray;
 } */
-.logo img {
-	width: 6rem;
-	padding-top: 1.5rem;
-	padding-left: 1.5rem;
-}
-
-nav {
-	background-color: white;
-	height: 10%;
-	position: fixed;
-	/* height: 100vh; */
-	width: 100%;
-
-	/* flex-shrink: 0; */
-}
-.nav-link-container {
-	width: 60%;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	background-color: var(--oya-orange);
-	position: fixed;
-	bottom: 0;
-	/* margin-left: auto; */
-	right: 0;
-	z-index: 1;
-	overflow: hidden;
-	transform: translate(300px);
-}
-.nav-link-container .links-wrapper {
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	z-index: 2;
-
-	/* position: relative; */
-	/* justify-content: space-around; */
-	width: 100%;
-
-	font-size: 1.3rem;
-}
-.nav-link-container .links-wrapper li {
-	min-height: 48px;
-	padding: 17px 26.69px 17px 26px;
-}
-.link-active {
-	background-color: #ffdd1a;
-	border-radius: 9999px;
-}
 
 .hero-container {
 	display: flex;
@@ -324,19 +275,7 @@ tablet
 		/* background-image: url("/assets/herobackground.png"); */
 		/* height: 80vh; */
 	}
-	nav {
-		padding: 0 4rem;
-		position: initial;
-	}
-	.ham {
-		display: none;
-	}
 
-	.logo img {
-		padding-top: 0rem;
-		padding-left: 0rem;
-		margin-left: 0rem;
-	}
 	/* 
 
 
@@ -344,38 +283,6 @@ might change later when figma is updated
 
      */
 
-	nav {
-		background-color: white;
-		/* height: 10%; */
-		height: 80px;
-		flex-shrink: 0;
-		display: flex;
-		justify-content: space-between;
-		/* padding: 0 2rem; */
-		align-items: center;
-	}
-	.nav-link-container {
-		width: 50%;
-		height: 100%;
-		display: flex;
-		align-items: center;
-		transform: translate(0);
-		position: relative;
-		background-color: white;
-	}
-	.nav-link-container .links-wrapper {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		padding: 0 5rem;
-		width: 100%;
-
-		font-size: 1.3rem;
-	}
-	.nav-link-container .links-wrapper li {
-		min-height: 48px;
-		padding: 17px 26.69px 17px 26px;
-	}
 	/* 
 
 
@@ -568,16 +475,6 @@ pc
 
 @media screen and (min-width: 900px) {
 	header {
-	}
-	nav {
-		/* background-color: blue; */
-	}
-	.logo img {
-		margin-left: 10rem;
-		width: 8rem;
-	}
-	.nav-link-container {
-		padding: 0 3rem;
 	}
 
 	.hero-container {

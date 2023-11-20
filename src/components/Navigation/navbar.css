@@ -1,0 +1,24 @@
+.mobile-nav-wrapper {
+	background-color: green;
+	position: relative;
+}
+.mobile-control-wrapper {
+	position: absolute;
+	padding: 0 3rem;
+	display: flex;
+	position: absolute;
+	justify-content: space-between;
+	align-items: center;
+	height: 8vh;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+}
+
+.mobile-nav {
+	position: absolute;
+	display: none;
+}
+
+.logo-div img {
+	width: 4rem;
+}

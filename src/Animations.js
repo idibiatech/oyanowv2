@@ -13,3 +13,4 @@ export const popInAnimation = {
 		},
 	},
 };
+export const AnimatedLinks = {};

@@ -5,11 +5,13 @@ import SectionThree from "../components/Sections/SectionThree";
 import SectionFour from "../components/Sections/SectionFour";
 import Footer from "../components/Footer/Footer";
 import "./index.css";
+import NavBar from "../components/Navigation/NavBar";
 
 const HomePage = () => {
 	return (
 		<>
 			<header>
+				<NavBar />
 				<Hero />
 			</header>
 			<main>

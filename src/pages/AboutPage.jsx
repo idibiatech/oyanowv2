@@ -3,9 +3,11 @@ import downarrow from "../assets/icons/downarrow.png";
 import locationicon from "../assets/images/location1.png";
 import PagesHero from "../components/Hero/PagesHero";
 import Footer from "../components/Footer/Footer";
+import NavBar from "../components/Navigation/NavBar";
 const AboutPage = () => {
 	return (
 		<>
+			<NavBar />
 			<PagesHero text1={"About"} text2="OyaNow" />
 			<>
 				<section class="section-one-about">

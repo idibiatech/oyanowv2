@@ -4,9 +4,11 @@ import phone from "../assets/icons/phone.png";
 import mail from "../assets/icons/mail.png";
 import tel from "../assets/images/phone.png";
 import Footer from "../components/Footer/Footer";
+import NavBar from "../components/Navigation/NavBar";
 const Contact = () => {
 	return (
 		<>
+			<NavBar />
 			<PagesHero text1={"contact"} text2="OyaNow" />
 			<>
 				<section class="section-one-about" id="contact-section-one">

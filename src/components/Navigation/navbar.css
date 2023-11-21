@@ -18,7 +18,11 @@
 	background-color: rgb(255, 255, 255);
 	/* z-index: 11; */
 }
-
+.get-started {
+	background-color: black;
+	color: white;
+	border-radius: 24px;
+}
 .mobile-nav {
 	position: fixed;
 
@@ -50,4 +54,43 @@
 }
 .displayed-mobile-menu-wrapper .mobile-control-wrapper img {
 	width: 4rem;
+}
+
+.pc-nav-wrapper {
+	background-color: white;
+	height: 6rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 10rem;
+}
+
+.pc-nav-wrapper .link-wrapper {
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+	padding: 0;
+	/* height: 4rem; */
+}
+.pc-nav-wrapper ul {
+	display: flex;
+
+	width: 100%;
+	justify-content: center;
+	padding: 0;
+	justify-content: flex-end;
+	align-items: center;
+}
+.pc-nav-wrapper ul li {
+	margin-left: 3rem;
+	/* padding: 1rem; */
+	width: 10rem;
+	height: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.pc-nav-wrapper img {
+	width: 6rem;
 }

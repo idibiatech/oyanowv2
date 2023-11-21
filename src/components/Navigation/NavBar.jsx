@@ -1,6 +1,7 @@
 import MobileNav from "./MobileNav";
+import PcNav from "./PcNav";
 import "./navbar.css";
 const NavBar = () => {
-	return <MobileNav />;
+	return <PcNav />;
 };
 export default NavBar;

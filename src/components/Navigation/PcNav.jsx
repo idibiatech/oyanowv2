@@ -22,19 +22,3 @@ const PcNav = () => {
 	);
 };
 export default PcNav;
-{
-	/* <ul>
-<li>
-    <Link>Home</Link>
-</li>
-<li>
-    <Link>About</Link>
-</li>
-<li>
-    <Link>Contact</Link>
-</li>
-<li className="get-started">
-    <Link>Get Started</Link>
-</li>
-</ul> */
-}

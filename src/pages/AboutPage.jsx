@@ -4,9 +4,16 @@ import locationicon from "../assets/images/location1.png";
 import PagesHero from "../components/Hero/PagesHero";
 import Footer from "../components/Footer/Footer";
 import NavBar from "../components/Navigation/NavBar";
+import { motion } from "framer-motion";
+import { pageAnimation } from "../Animations";
 const AboutPage = () => {
 	return (
-		<>
+		<motion.div
+			variants={pageAnimation}
+			initial="initial"
+			animate="animate"
+			exit="exit"
+		>
 			<NavBar />
 			<PagesHero text1={"About"} text2="OyaNow" />
 			<>
@@ -114,7 +121,7 @@ const AboutPage = () => {
 				</section>
 			</>
 			<Footer />
-		</>
+		</motion.div>
 	);
 };
 export default AboutPage;

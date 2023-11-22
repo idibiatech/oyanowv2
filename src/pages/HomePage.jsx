@@ -6,10 +6,17 @@ import SectionFour from "../components/Sections/SectionFour";
 import Footer from "../components/Footer/Footer";
 import "./index.css";
 import NavBar from "../components/Navigation/NavBar";
+import { motion } from "framer-motion";
+import { pageAnimation } from "../Animations";
 
 const HomePage = () => {
 	return (
-		<>
+		<motion.div
+			variants={pageAnimation}
+			initial="initial"
+			animate="animate"
+			exit="exit"
+		>
 			<header>
 				<NavBar />
 				<Hero />
@@ -21,7 +28,7 @@ const HomePage = () => {
 				<SectionFour />
 			</main>
 			<Footer />
-		</>
+		</motion.div>
 	);
 };
 export default HomePage;

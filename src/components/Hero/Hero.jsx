@@ -41,12 +41,15 @@ const Hero = () => {
 			<motion.div
 				initial={{
 					scale: 0.6,
+					opacity: 0,
 				}}
 				animate={{
 					scale: 1,
+					opacity: 1,
 				}}
 				transition={{
 					duration: 1,
+					delay: 0.2,
 
 					ease: "backInOut",
 				}}

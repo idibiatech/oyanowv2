@@ -1,5 +1,5 @@
 header {
-	height: 80vh;
+	height: 100vh;
 	/* background-image: url("../assets/herobackground.png"); */
 	background-color: var(--oya-orange);
 
@@ -10,7 +10,9 @@ header {
 }
 .pagesheader {
 	background-image: none;
+	height: 70vh;
 }
+
 /* .logo {
 	height: 100%;
 	background-color: gray;
@@ -59,8 +61,16 @@ header {
 section {
 	padding: 1.3rem 2rem;
 	height: auto;
+	/* background-color: red; */
 }
-.section-one-about {
+.section-one {
+	background-color: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-one {
 	background-color: white;
 }
 .section-one-wrapper {
@@ -77,9 +87,10 @@ section {
 	align-items: center;
 	text-align: center;
 }
+
 .section-one-top h3 {
 	margin: 0 0 0.3rem 0;
-	font-size: 13px;
+	font-size: 18px;
 }
 .section-one-wrapper .section-one-bottom-wrapper {
 	width: 100%;
@@ -89,7 +100,11 @@ section {
 	justify-content: space-around;
 	/* padding: 0 4rem; */
 }
-.section-two-about h2 {
+
+.section-one-about h2 {
+	font-size: 2rem;
+}
+.section-two h2 {
 	margin: 3rem 0;
 }
 .section-one-bottom-wrapper li {
@@ -99,6 +114,24 @@ section {
 .section-one-bottom-wrapper img {
 	width: 4rem;
 }
+.section-two {
+	background-color: #f2f2f2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	text-align: center;
+}
+.section-two-outer-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.section-one-about {
+	background-color: white;
+}
+
 .section-two-about {
 	background-color: #f2f2f2;
 	display: flex;
@@ -108,6 +141,7 @@ section {
 	height: auto;
 	text-align: center;
 }
+
 .section-two-outer-wrapper {
 	display: flex;
 	flex-direction: column;
@@ -123,6 +157,9 @@ section {
 	margin: 1rem 0;
 	padding: 3rem 2rem;
 	align-items: center;
+}
+.section-two-item h3 {
+	font-size: 2rem;
 }
 
 .section-two-about .one {
@@ -172,9 +209,59 @@ section {
 	align-items: center;
 	background-color: #363636;
 }
+
 .section-three-item div a {
 	color: var(--oya-orange);
 }
+
+/* 
+
+custom styles for contact page
+
+ */
+#contact-section-one .section-one-wrapper div {
+	/* margin: 0rem 0;
+	padding-top: 2rem;
+	padding-bottom: 0rem; */
+}
+#contact-bottom .phone {
+	width: 8rem;
+}
+#contact-bottom .contact-icon {
+	width: 1rem;
+}
+#contact-bottom div {
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+#contact-bottom div p {
+	font-size: 10px;
+}
+.contact-bottom-right-wrapper div {
+	background-color: #202020;
+	color: #fff;
+	width: 10rem;
+	border-radius: 20px;
+	height: 4rem;
+}
+.contact-bottom-right div {
+	margin: 0.2rem 0;
+}
+.section-one-bottom-wrapper div:first-child {
+	margin: 1rem 0;
+}
+/* #contact-bottom {
+
+	display: flex;
+}
+#contact-bottom .phone {
+	width: 5rem;
+}
+#contact-bottom .section-one-bottom-wrapper {
+	display: flex;
+	flex-direction: column;
+} */
 footer li,
 a {
 	color: #12121299;
@@ -250,9 +337,7 @@ custom styles for contact page
 .contact-bottom-right div {
 	margin: 0.2rem 0;
 }
-.section-one-bottom-wrapper div:first-child {
-	margin: 1rem 0;
-}
+
 /* #contact-bottom {
 
 	display: flex;
@@ -333,22 +418,13 @@ might change later when figma is updated
 		padding: 4rem 5rem;
 	}
 	.section-one-about h2 {
-		margin: 1rem 0;
 		font-size: 3rem;
 	}
-	.section-one-top h3 {
-		margin: 0 0 0.3rem 0;
-		font-size: 18px;
+	.section-two-item {
+		font-size: 1.4rem;
 	}
-	.section-one-wrapper div {
-		padding: 4rem 5rem;
-	}
-
-	.section-one-wrapper .section-one-bottom-wrapper {
-		padding: 0 4rem;
-	}
-	.section-one-bottom-wrapper img {
-		width: 6rem;
+	.section-two-item h3 {
+		font-size: 1.4rem;
 	}
 
 	.section-two-about h2 {
@@ -523,6 +599,38 @@ pc
 		padding: 4rem 6rem;
 	}
 
+	.section-two-item {
+		height: 15rem;
+		width: 15rem;
+		margin: 1rem 0.5rem;
+		padding: 4rem 3rem;
+	}
+	.section-two-item p {
+		font-size: 16px;
+	}
+	.section-two-inner-top {
+		display: flex;
+	}
+	.section-two-inner-top {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.section-two-inner-bottom {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		/* flex-direction: column; */
+	}
+	.section-two-inner-bottom .section-two-item {
+		width: 15rem;
+		height: 15rem;
+	}
+
+	.section-one {
+		padding: 4rem 6rem;
+	}
+
 	.section-one-wrapper div {
 		padding: 4rem 15rem;
 	}
@@ -651,24 +759,4 @@ custom styles for contact page
 	#contact-bottom div p {
 		font-size: 12px;
 	}
-	/* #contact-bottom .contact-bottom-right-wrapper {
-		display: flex;
-		flex-direction: column;
-	} */
-	/* #contact-bottom .contact-bottom-right-wrapper div {
-		width: 10rem;
-		border-radius: 20px;
-		height: 4rem;
-		display: flex;
-		flex-direction: column;
-
-	} */
-
-	/* .contact-bottom-right div {
-		margin: 0rem 0.5rem;
-		padding: 1rem 0;
-	}
-	.section-one-bottom-wrapper div:first-child {
-		margin: 1rem 0;
-	} */
 }

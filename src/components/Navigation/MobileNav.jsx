@@ -39,18 +39,7 @@ const MobileNav = () => {
 			},
 		},
 	};
-	const staggeredVar = {
-		initial: {
-			y: "30vh",
-			transformOrigin: "top center",
-		},
-		open: {
-			y: 0,
-			transition: {
-				duration: 4,
-			},
-		},
-	};
+
 	return (
 		<motion.div className="mobile-nav-wrapper">
 			<div className="mobile-control-wrapper">
@@ -97,11 +86,23 @@ const MobileNav = () => {
 };
 
 export default MobileNav;
+const staggeredVar = {
+	initial: {
+		y: "30vh",
+		transformOrigin: "top center",
+	},
+	open: {
+		y: 0,
+		transition: {
+			duration: 1,
+		},
+	},
+};
 const MobileNavLink = ({ title, to }) => {
 	return (
-		<li>
+		<motion.li variants={staggeredVar} initial="initial" animate="open">
 			<Link to={`${to}`}>{title}</Link>
-		</li>
+		</motion.li>
 	);
 };
 // variants={staggeredVar}

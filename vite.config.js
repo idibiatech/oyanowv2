@@ -17,7 +17,7 @@ export default defineConfig(({ command }) => {
 	};
 
 	if (command !== "serve") {
-		config.base = "/oyanowv2/";
+		config.base = "/oyanowv2";
 	}
 
 	return config;

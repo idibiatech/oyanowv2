@@ -2,12 +2,11 @@
 	cursor: pointer;
 }
 .mobile-nav-wrapper {
-	background-color: green;
 	position: relative;
 	height: 8vh;
 }
 .mobile-control-wrapper {
-	position: absolute;
+	position: relative;
 	padding: 0 3rem;
 	display: flex;
 	position: absolute;

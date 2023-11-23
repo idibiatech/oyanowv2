@@ -15,23 +15,24 @@ export const popInAnimation = {
 };
 export const pageAnimation = {
 	initial: {
-		scale: 0.8,
-		opacity: 0,
-		transformOrigin: " center center",
+		// x: 100,
+		opacity: 0.3,
+		// transformOrigin: " center center",
 	},
 	animate: {
-		scale: 1,
+		// x: 0,
 		opacity: 1,
-		transformOrigin: " center center",
+		// transformOrigin: " center center",
 		transition: {
 			duration: 1,
 			ease: "backInOut",
 		},
 	},
 	exit: {
-		opacity: 1,
-		scale: 0.8,
-		transformOrigin: " center center",
+		opacity: 0.3,
+		// x: 100,
+
+		// transformOrigin: " center center",
 	},
 };
 // export const AnimatedLinks = {};

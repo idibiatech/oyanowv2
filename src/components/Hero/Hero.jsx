@@ -1,6 +1,8 @@
-import herobike from "../../assets/images/herobike.png";
-import applebutton from "../../assets/icons/Button apple.png";
-import googlebutton from "../../assets/icons/Button google.png";
+import heroBike from "../../assets/images/heroBike.png";
+import appleButton from "../../assets/icons/Button apple.png";
+import googleButton from "../../assets/icons/Button google.png";
+import searchArrow from "../../assets/icons/vector.png";
+import sendArrow from "../../assets/icons/sendArrow.png";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -22,7 +24,7 @@ const Hero = () => {
 						<a href="https://play.google.com/store/apps/details?id=com.g360synergy.oyanow">
 							<img
 								class="store-images"
-								src={googlebutton}
+								src={googleButton}
 								alt="google play app download link"
 							/>
 						</a>
@@ -31,10 +33,26 @@ const Hero = () => {
 						<a href="https://apps.apple.com/ng/app/oyanow/id1248784384">
 							<img
 								class="store-images"
-								src={applebutton}
+								src={appleButton}
 								alt="apple store app download link"
 							/>
 						</a>
+					</div>
+				</div>
+				<div className="search-box">
+					<div className="search-icon-wrapper">
+						<img src={searchArrow} alt="" />
+					</div>
+					<div className="search-input-wrapper">
+						<input type="text" name="" id="" />
+					</div>
+					<div className="search-btn-wrapper">
+						<div className="send-icon-wrapper">
+							<img src={sendArrow} alt="" />
+						</div>
+						<div className="send-text-wrapper">
+							<p>Use your current location</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -57,7 +75,7 @@ const Hero = () => {
 			>
 				<img
 					class="section-images"
-					src={herobike}
+					src={heroBike}
 					alt="image of a delivery bike"
 				/>
 			</motion.div>

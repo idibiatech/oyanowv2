@@ -13,24 +13,16 @@ header {
 	height: 70vh;
 }
 
-/* .logo {
-	height: 100%;
-	background-color: gray;
-} */
-
 .hero-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/* background-color: red; */
 	height: 100%;
 	padding-top: 3rem;
 }
 .hero-item {
-	/* background-color: green; */
 	width: 100%;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -58,10 +50,61 @@ header {
 	padding-bottom: 8rem;
 }
 
+.search-icon-wrapper img,
+.send-icon-wrapper img {
+	width: 1.4rem;
+}
+.search-box {
+	/* background-color: white; */
+	width: 100%;
+	margin-top: 1rem;
+	display: flex;
+	height: 3rem;
+	border-radius: 24px;
+	display: flex;
+	padding: 0 0rem;
+	align-items: center;
+}
+.search-box p {
+	font-size: 10px;
+}
+.search-icon-wrapper {
+	width: 10%;
+	height: 100%;
+	background-color: #ffb843;
+	border-radius: 24px 0 0 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.search-input-wrapper {
+	width: 40%;
+	height: 100%;
+	background-color: white;
+}
+.search-input-wrapper input {
+	width: 100%;
+	height: 100%;
+}
+.search-btn-wrapper {
+	height: 100%;
+	width: 40%;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	margin-left: 0.1rem;
+	background-color: white;
+	border-radius: 0 24px 24px 0;
+}
+.send-icon-wrapper {
+}
 section {
 	padding: 1.3rem 2rem;
 	height: auto;
 	/* background-color: red; */
+}
+.section-one-wrapper h2,
+.section-one-wrapper h2 {
 }
 .section-one {
 	background-color: red;
@@ -103,6 +146,7 @@ section {
 
 .section-one-about h2 {
 	font-size: 2rem;
+	font-weight: 500;
 }
 .section-two h2 {
 	margin: 3rem 0;
@@ -141,6 +185,10 @@ section {
 	height: auto;
 	text-align: center;
 }
+.section-two-about h2 {
+	font-size: 1.4rem;
+	font-weight: 500;
+}
 
 .section-two-outer-wrapper {
 	display: flex;
@@ -160,6 +208,7 @@ section {
 }
 .section-two-item h3 {
 	font-size: 2rem;
+	font-weight: 500;
 }
 
 .section-two-about .one {

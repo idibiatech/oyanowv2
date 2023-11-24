@@ -30,7 +30,6 @@ p {
 
 header {
 	height: 100vh;
-
 	background-image: url("./assets/herobackground.png");
 	/* background-attachment: fixed; */
 	background-size: cover;
@@ -74,14 +73,9 @@ header {
 /* .left-hero-container h1 {
 	margin: 1rem 0;
 } */
-.left-hero-container h1 .express {
-	font-size: 3.2rem;
-	font-weight: 400;
-	color: #323232;
-}
 
 .left-hero-container .bold-heading {
-	font-size: 4rem;
+	font-size: 3rem;
 }
 .left-hero-link-container {
 	/* background-color: blue; */
@@ -93,7 +87,7 @@ header {
 .left-hero-container h1 span {
 	font-weight: bold;
 	color: #323232;
-	font-weight: 700;
+	/* font-weight: 700; */
 }
 .left-hero-container h2 {
 	font-weight: 400;

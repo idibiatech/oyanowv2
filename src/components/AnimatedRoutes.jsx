@@ -14,11 +14,11 @@ const AnimatedRoutes = () => {
 		// <AnimatePresence>
 		// 	<Routes location={location} key={location.pathname}>
 		// 		<Route path="oyanowv2/" element={<HomePage />} />
-		// 		<Route path="oyanowv2/about" element={<AboutPage />} />
-		// 		<Route path="oyanowv2/contact" element={<ContactPage />} />
-		// 		<Route path="oyanowv2/faq" element={<Faq />} />
-		// 		<Route path="oyanowv2/terms" element={<Terms />} />
-		// 		<Route path="oyanowv2/privacy" element={<Privacy />} />
+		// 		<Route path="/about" element={<AboutPage />} />
+		// 		<Route path="/contact" element={<ContactPage />} />
+		// 		<Route path="/faq" element={<Faq />} />
+		// 		<Route path="/terms" element={<Terms />} />
+		// 		<Route path="/privacy" element={<Privacy />} />
 		// 	</Routes>
 		// </AnimatePresence>
 

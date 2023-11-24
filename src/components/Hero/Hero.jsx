@@ -10,11 +10,9 @@ const Hero = () => {
 		<div class="hero-container">
 			<div class="left-hero-container hero-box">
 				<h1>
-					<div class="express">Express</div>
-					<span class="bold-heading">
-						<div>Delivery</div>
-						<div>Service!</div>
-					</span>
+					<div class="bold-heading">
+						<h1>Express Delivery Service!</h1>
+					</div>
 				</h1>
 				<h2>
 					You need <span class="tagline"></span>
@@ -44,7 +42,7 @@ const Hero = () => {
 						<img src={searchArrow} alt="" />
 					</div>
 					<div className="search-input-wrapper">
-						<input type="text" name="" id="" />
+						<input type="text" name="" id="" placeholder="Enter your address" />
 					</div>
 					<div className="search-btn-wrapper">
 						<div className="send-icon-wrapper">

@@ -2,17 +2,73 @@ import arrow from "../../assets/icons/arrow.png";
 import oyabike from "../../assets/images/ojabike.webp.png";
 import manMagnet from "../../assets/images/manmagnet.png";
 import chart from "../../assets/images/chart.png";
+import johnny from "../../assets/images/johnny.png";
 import { motion } from "framer-motion";
 import { popInAnimation } from "../../Animations";
 
 const SectionTwo = () => {
+	const sampleRes = [
+		{
+			name: "johnny",
+			image: { johnny },
+		},
+		{
+			name: "another",
+			image: { johnny },
+		},
+		{
+			name: "another",
+			image: { johnny },
+		},
+	];
 	return (
 		<section class="section-two">
 			<div className="top-Restaurants">
 				<h3>
 					Top Restaurants on <span>OyaNow</span>
 				</h3>
-				<div className="Restaurants-wrapper"></div>
+				<div className="Restaurants-wrapper">
+					<div className="restaurant-item">
+						<div className="restaurant-image">
+							<img src={johnny} alt="" />
+						</div>
+						<div className="restaurant-name">
+							<h3>name</h3>
+						</div>
+					</div>
+					<div className="restaurant-item">
+						<div className="restaurant-image">
+							<img src={johnny} alt="" />
+						</div>
+						<div className="restaurant-name">
+							<h3>name</h3>
+						</div>
+					</div>
+					<div className="restaurant-item">
+						<div className="restaurant-image">
+							<img src={johnny} alt="" />
+						</div>
+						<div className="restaurant-name">
+							<h3>name</h3>
+						</div>
+					</div>
+					<div className="restaurant-item">
+						<div className="restaurant-image">
+							<img src={johnny} alt="" />
+						</div>
+						<div className="restaurant-name">
+							<h3>name</h3>
+						</div>
+					</div>
+					<div className="restaurant-item">
+						<div className="restaurant-image">
+							<img src={johnny} alt="" />
+						</div>
+						<div className="restaurant-name">
+							<h3>name</h3>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="section-two-container one">
 				<div class="two-box-left two-box">

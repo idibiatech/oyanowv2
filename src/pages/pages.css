@@ -173,15 +173,48 @@ section {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
 	height: auto;
-	text-align: center;
+	text-align: start;
 }
+
 .section-two-outer-wrapper {
 	display: flex;
 	flex-direction: column;
 }
+.top-Restaurants {
+	width: 100%; /* Make sure the container takes up the full width */
+	display: flex;
+	justify-content: center;
+}
+.Restaurants-wrapper {
+	display: flex;
+	flex-direction: column;
 
+	align-items: flex-start;
+	border-radius: 24px;
+
+	/* width: 4rem; */
+}
+.restaurant-item {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	background-color: white;
+	border-radius: 16px;
+	padding: 0.5rem 0;
+	width: 100%;
+}
+.restaurant-item:nth-child(odd) {
+	background-color: #f9ca0d;
+}
+
+.restaurant-image img {
+	width: 3rem;
+}
+.Restaurants-wrapper div {
+	/* display: flex; */
+	margin: 0.5rem 0.4rem;
+}
 .section-one-about {
 	background-color: white;
 }
@@ -486,6 +519,30 @@ might change later when figma is updated
 	}
 	.send-icon-wrapper {
 		/* display: none; */
+	}
+
+	/*  */
+	/* restaurant styles */
+	/*  */
+
+	.Restaurants-wrapper {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(32%, 1fr));
+		gap: 10px;
+		align-items: center;
+		border-radius: 24px;
+	}
+	.restaurant-item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.restaurant-image img {
+		width: 5rem;
+	}
+	.Restaurants-wrapper div {
+		/* display: flex; */
+		margin: 0 0.4rem;
 	}
 	.section-one-about {
 		padding: 4rem 5rem;

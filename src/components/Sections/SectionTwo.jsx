@@ -20,6 +20,14 @@ const SectionTwo = () => {
 			name: "another",
 			image: { johnny },
 		},
+		{
+			name: "another",
+			image: { johnny },
+		},
+		{
+			name: "another",
+			image: { johnny },
+		},
 	];
 	return (
 		<section class="section-two">
@@ -28,46 +36,30 @@ const SectionTwo = () => {
 					Top Restaurants on <span>OyaNow</span>
 				</h3>
 				<div className="Restaurants-wrapper">
-					<div className="restaurant-item">
+					{/* <div className="restaurant-item">
 						<div className="restaurant-image">
 							<img src={johnny} alt="" />
 						</div>
 						<div className="restaurant-name">
 							<h3>name</h3>
 						</div>
-					</div>
-					<div className="restaurant-item">
-						<div className="restaurant-image">
-							<img src={johnny} alt="" />
-						</div>
-						<div className="restaurant-name">
-							<h3>name</h3>
-						</div>
-					</div>
-					<div className="restaurant-item">
-						<div className="restaurant-image">
-							<img src={johnny} alt="" />
-						</div>
-						<div className="restaurant-name">
-							<h3>name</h3>
-						</div>
-					</div>
-					<div className="restaurant-item">
-						<div className="restaurant-image">
-							<img src={johnny} alt="" />
-						</div>
-						<div className="restaurant-name">
-							<h3>name</h3>
-						</div>
-					</div>
-					<div className="restaurant-item">
-						<div className="restaurant-image">
-							<img src={johnny} alt="" />
-						</div>
-						<div className="restaurant-name">
-							<h3>name</h3>
-						</div>
-					</div>
+					</div> */}
+				</div>
+
+				{/* below code maps through a list of objects returning its images and name, dunny object created above */}
+				<div className="Restaurants-wrapper">
+					{sampleRes.map((item, index) => {
+						return (
+							<div key={index} className="restaurant-item">
+								<div className="restaurant-image">
+									<img src={johnny} alt="" />
+								</div>
+								<div className="restaurant-name">
+									<h3>{item.name}</h3>
+								</div>
+							</div>
+						);
+					})}
 				</div>
 			</div>
 			<div class="section-two-container one">

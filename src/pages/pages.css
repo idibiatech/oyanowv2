@@ -87,19 +87,27 @@ header {
 }
 .search-input-wrapper input::placeholder {
 	padding: 0 0 0 1rem;
+	font-size: 12px;
 }
 .search-btn-wrapper {
 	height: 100%;
-	width: 40%;
+	width: auto;
+	padding: 0 1rem;
 	display: flex;
 	justify-content: start;
 	align-items: center;
 	margin-left: 0.1rem;
 	background-color: white;
 	border-radius: 0 24px 24px 0;
+	cursor: pointer;
+}
+.send-text-wrapper {
+	display: none;
 }
 .send-icon-wrapper {
+	/* display: none; */
 }
+
 section {
 	padding: 1.3rem 2rem;
 	height: auto;
@@ -468,6 +476,17 @@ might change later when figma is updated
 		right: 1rem;
 	}
 
+	.search-btn-wrapper {
+		width: 40%;
+		display: flex;
+		padding: 0;
+	}
+	.send-text-wrapper {
+		display: block;
+	}
+	.send-icon-wrapper {
+		/* display: none; */
+	}
 	.section-one-about {
 		padding: 4rem 5rem;
 	}

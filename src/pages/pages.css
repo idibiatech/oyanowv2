@@ -64,7 +64,8 @@ header {
 	align-items: center;
 }
 .search-box p {
-	font-size: 10px;
+	font-size: 12px;
+	color: #ffb843;
 }
 .search-icon-wrapper {
 	width: 10%;
@@ -74,6 +75,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 3rem;
 }
 .search-input-wrapper {
 	width: 40%;
@@ -84,10 +86,12 @@ header {
 	width: 100%;
 	height: 100%;
 	outline: none;
+	text-indent: 0.3rem;
 }
 .search-input-wrapper input::placeholder {
-	padding: 0 0 0 1rem;
 	font-size: 12px;
+
+	/* background-color: red; */
 }
 .search-btn-wrapper {
 	height: 100%;
@@ -504,7 +508,6 @@ might change later when figma is updated
 	}
 	.hero-right img {
 		width: 20rem;
-
 		position: absolute;
 		right: 1rem;
 	}
@@ -513,6 +516,9 @@ might change later when figma is updated
 		width: 40%;
 		display: flex;
 		padding: 0;
+	}
+	.search-input-wrapper input {
+		text-indent: 1rem;
 	}
 	.send-text-wrapper {
 		display: block;

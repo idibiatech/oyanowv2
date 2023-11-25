@@ -276,39 +276,6 @@ might change later when figma is updated
 
      */
 
-	nav {
-		background-color: white;
-		/* height: 10%; */
-		height: 80px;
-		flex-shrink: 0;
-		display: flex;
-		justify-content: space-between;
-		/* padding: 0 2rem; */
-		align-items: center;
-		position: initial;
-	}
-	.nav-link-container {
-		width: 50%;
-		height: 100%;
-		display: flex;
-		align-items: center;
-		transform: translate(0);
-		position: relative;
-		background-color: white;
-	}
-	.nav-link-container .links-wrapper {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		padding: 0 5rem;
-		width: 100%;
-
-		font-size: 1.3rem;
-	}
-	.nav-link-container .links-wrapper li {
-		min-height: 48px;
-		padding: 17px 26.69px 17px 26px;
-	}
 	/* 
 
 
@@ -477,7 +444,7 @@ pc
 	.right-hero-container img {
 		/* padding: 3rem; */
 		width: 100%;
-		right: 12rem;
+		right: 0rem;
 		position: relative;
 	}
 	/* .two-box {

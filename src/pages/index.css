@@ -122,19 +122,39 @@ section three (blogs)    start
 
  */
 
-.section-three {
+.section-three-homepage {
 	background-color: #f2f2f2;
-}
-.section-three .blog-wrapper {
-	min-height: 4rem;
 	height: auto;
-	background-color: red;
+	padding: 2.5rem 2rem;
+}
+.section-three-homepage .blog-wrapper {
+	/* min-height: 4rem; */
+	height: auto;
 	width: 100%;
 	padding: 3rem 0;
 	display: flex;
 	flex-direction: column;
-
-	align-items: center;
+}
+.blog-texts {
+	padding-left: 1rem;
+}
+.single-blog-date {
+	width: 100%;
+}
+.single-blog-date span {
+	font-size: 0.7rem;
+	opacity: 0.7;
+	font-weight: bold;
+}
+.single-blog-img {
+	height: 15rem;
+	width: 100%;
+	border-radius: 16px;
+	background-color: green;
+}
+.single-blog-intro p {
+	opacity: 0.9;
+	font-size: 0.8rem;
 }
 
 /* 
@@ -371,6 +391,18 @@ might change later when figma is updated
 	}
 	.footer-bottom ul li {
 		margin: 0 1rem;
+	}
+
+	.section-three-homepage .blog-wrapper {
+		/* min-height: 4rem; */
+		height: auto;
+
+		flex-direction: row;
+	}
+	.single-blog {
+		/* margin: 1rem 0; */
+
+		padding: 0.2rem;
 	}
 }
 

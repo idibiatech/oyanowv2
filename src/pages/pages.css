@@ -592,27 +592,6 @@ might change later when figma is updated
 		height: 10rem;
 	}
 
-	.section-three {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-	.section-three-item {
-		display: flex;
-		/* flex-direction: column; */
-	}
-	.section-three-item div {
-		width: 100%;
-		height: 2.5rem;
-		margin: 0rem 1rem;
-		border-radius: 24px;
-		width: 16rem;
-	}
-	.section-three-item div a {
-		font-size: 13px;
-	}
-
 	footer {
 		height: auto;
 		padding: 2rem 4.5rem;

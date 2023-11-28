@@ -1,0 +1,42 @@
+.create-account-wrapper {
+	position: absolute;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	height: 50%;
+	border-radius: 20px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 1rem;
+}
+.create-account-x {
+	position: absolute;
+	background-color: red;
+	right: 1rem;
+	top: 1rem;
+	width: 2rem;
+	height: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+	.create-account-wrapper {
+		position: absolute;
+		/* background-color: green; */
+		top: 40%;
+		width: 60%;
+		height: 30rem;
+	}
+}
+@media screen and (min-width: 1000px) {
+	.create-account-wrapper {
+		position: absolute;
+		/* background-color: green; */
+		width: 30rem;
+		height: 30rem;
+		top: 40%;
+	}
+}

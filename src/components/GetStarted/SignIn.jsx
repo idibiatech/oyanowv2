@@ -2,13 +2,16 @@ import "./SignIn.css";
 import facebookIcon from "../../assets/icons/facebookIcon.png";
 import emailIcon from "../../assets/icons/emailIcon.png";
 import googleIcon from "../../assets/icons/googleIcon.png";
+import cancel from "../../assets/icons/x-solid.svg";
 
 const SignIn = () => {
 	return (
-		<div className="sign-in-wrapper">
-			<div className="sign-in-x"></div>
-			<h3>Welcome</h3>
-			<h5>Create an account to get started</h5>
+		<div className="sign-in-wrapper gs-wrapper">
+			<div className="cancel-btn">
+				<img src={cancel} alt="" />
+			</div>
+			<h3 className="gs-heading">Welcome</h3>
+			<h5 className="gs-sub-heading">Create an account to get started</h5>
 			<div className="login-links">
 				<div className="login-google">
 					<div className="social-logo">
@@ -29,7 +32,7 @@ const SignIn = () => {
 					<div className="social-text">Sign up with Email</div>
 				</div>
 			</div>
-			<div className="sign-in-text">
+			<div className="gs-text">
 				By creating an account, you automatically accept our
 				<a href=""> Terms of service</a>, <a href="">Privacy Policy </a>and
 				<a href=""> Cookies Policy</a>

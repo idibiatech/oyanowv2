@@ -6,6 +6,7 @@ import SectionFour from "../components/Sections/SectionFour";
 import Footer from "../components/Footer/Footer";
 
 import "./index.css";
+import GetStarted from "../components/GetStarted/GetStarted";
 import NavBar from "../components/Navigation/NavBar";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../Animations";
@@ -31,8 +32,7 @@ const HomePage = () => {
 				<SectionFour />
 			</main>
 			<Footer />
-			<CreateAccount />
-			{/* <SignIn /> */}
+			<GetStarted />
 		</motion.div>
 	);
 };

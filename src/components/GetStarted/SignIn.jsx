@@ -1,4 +1,6 @@
+import "./getstarted.css";
 import "./SignIn.css";
+
 import facebookIcon from "../../assets/icons/facebookIcon.png";
 import emailIcon from "../../assets/icons/emailIcon.png";
 import googleIcon from "../../assets/icons/googleIcon.png";

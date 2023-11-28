@@ -1,12 +1,15 @@
-import "./getstarted.css";
+import "./getStarted.css";
 import "./createAccount.css";
 import userIcon from "../../assets/icons/userIcon.png";
 import mailIcon from "../../assets/icons/mailIcon.png";
 import lockIcon from "../../assets/icons/lock.png";
 import cancel from "../../assets/icons/x-solid.svg";
+import fIcon from "../../assets/icons/fIcon.png";
+
+import gIcon from "../../assets/icons/gIcon.png";
 const CreateAccount = () => {
 	return (
-		<div className="create-account-wrapper gs-wrapper">
+		<div className="gs-wrapper create-account-wrapper ">
 			<div className="cancel-btn">
 				<img src={cancel} alt="" />
 			</div>
@@ -74,13 +77,23 @@ const CreateAccount = () => {
 				<span>Create Account</span>
 			</div>
 			<div className="demarcation-wrapper">
-				<div></div>
+				<div className="dem-lines"></div>
 				<div> Or</div>
-				<div></div>
+				<div className="dem-lines"></div>
 			</div>
 			<div className="create-account-socials">
-				<div className="create-google"></div>
-				<div className="create-facebook"></div>
+				<div className="create-google">
+					<div className="social-icon">
+						<img src={gIcon} alt="" />
+					</div>
+					<div className="">Google</div>
+				</div>
+				<div className="create-facebook">
+					<div className="social-icon">
+						<img src={fIcon} alt="" />
+					</div>
+					<div className="">Facebook</div>
+				</div>
 			</div>
 			<div>
 				<p>

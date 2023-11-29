@@ -1,3 +1,8 @@
+.link-wrapper .active {
+	background-color: #ffb843;
+	border-radius: 24px;
+}
+
 .overflow-hidden {
 	overflow: hidden;
 }
@@ -88,13 +93,15 @@
 	align-items: center;
 }
 .pc-nav-wrapper ul li {
-	margin-left: 3rem;
+	margin-left: 2rem;
 	/* padding: 1rem; */
 	width: 10rem;
 	height: 3rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-weight: 500;
+	font-size: large;
 }
 .pc-nav-wrapper img {
 	width: 6rem;

@@ -26,7 +26,6 @@ const AnimatedRoutes = () => {
 		// offline
 		<AnimatePresence>
 			<Routes location={location} key={location.pathname}>
-				{/* <Route path="/" element={<GetStarted />} /> */}
 				<Route path="/" element={<HomePage />} />
 				<Route path="/about" element={<AboutPage />} />
 				<Route path="/contact" element={<ContactPage />} />

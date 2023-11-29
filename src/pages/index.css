@@ -1,5 +1,5 @@
 .section-one h2 {
-	color: white;
+	color: black;
 	padding: 2rem 0;
 }
 
@@ -126,6 +126,10 @@ section three (blogs)    start
 	background-color: #f2f2f2;
 	height: auto;
 	padding: 2.5rem 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .section-three-homepage .blog-wrapper {
 	/* min-height: 4rem; */
@@ -307,7 +311,7 @@ might change later when figma is updated
 		/* padding: 2rem; */
 		padding-left: 4;
 		padding-top: 0rem;
-		padding-bottom: 10rem;
+		padding-bottom: 0rem;
 		/* width: 120%; */
 	}
 	.left-hero-container .stores {
@@ -396,7 +400,8 @@ might change later when figma is updated
 	.section-three-homepage .blog-wrapper {
 		/* min-height: 4rem; */
 		height: auto;
-
+		justify-content: center;
+		align-items: center;
 		flex-direction: row;
 	}
 	.single-blog {

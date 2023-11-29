@@ -53,8 +53,8 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: start;
-	padding-top: 3rem;
+	align-items: center;
+	/* padding-top: 3rem; */
 }
 
 .hero-box {
@@ -66,8 +66,8 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: start;
-	padding-left: 3rem;
-	padding-top: 4rem;
+	padding-left: 2rem;
+	padding-top: 2rem;
 }
 
 /* .left-hero-container h1 {
@@ -76,6 +76,7 @@ header {
 
 .left-hero-container .bold-heading {
 	font-size: 3rem;
+	line-height: 3rem;
 }
 .left-hero-link-container {
 	/* background-color: blue; */
@@ -90,11 +91,11 @@ header {
 	/* font-weight: 700; */
 }
 .left-hero-container h2 {
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 13px;
 }
 .left-hero-link-container {
-	width: 20rem;
+	width: 18rem;
 }
 .left-hero-link-container .stores {
 	display: flex;
@@ -113,20 +114,20 @@ header {
 	padding: 0%;
 	margin: 0;
 }
-.stores-right {
-	/* background-color: indianred; */
-}
+
 .right-hero-container {
 }
 .right-hero-container img {
 	width: 100%;
+
+	padding: 1rem;
 }
 
 .tagline {
-	font-weight: 900;
-	/* font-size: 23px; */
+	font-weight: 600;
+	padding: 0;
+	margin: 0;
 	font-family: var(--heading-font);
-	/* font-size: px; */
 }
 /* 
 

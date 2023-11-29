@@ -121,7 +121,6 @@ section {
 .section-one-wrapper h2 {
 }
 .section-one {
-	background-color: red;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -193,8 +192,9 @@ section {
 .Restaurants-wrapper {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 
-	align-items: flex-start;
+	align-items: center;
 	border-radius: 24px;
 
 	/* width: 4rem; */
@@ -459,7 +459,9 @@ tablet
 	.left-hero-container .bold-heading {
 		font-size: 4rem;
 		font-weight: 900;
+		line-height: 5rem;
 	}
+
 	/* 
 
 
@@ -477,12 +479,14 @@ might change later when figma is updated
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		align-items: center;
+		align-items: start;
+		padding: 1rem 0;
 		/* background-color: red; */
 	}
+	.hero-box {
+		padding-top: 10rem;
+	}
 	.hero-item {
-		/* background-color: green; */
-
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -535,7 +539,7 @@ might change later when figma is updated
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(32%, 1fr));
 		gap: 10px;
-		align-items: center;
+
 		border-radius: 24px;
 	}
 	.restaurant-item {

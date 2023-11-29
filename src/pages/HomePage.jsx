@@ -23,7 +23,7 @@ const HomePage = () => {
 			exit="exit"
 		>
 			<header>
-				<NavBar />
+				<NavBar linkState="active" />
 				<Hero />
 			</header>
 			<main>

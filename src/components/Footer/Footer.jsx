@@ -1,5 +1,6 @@
 import applestore from "../../assets/icons/apple.png";
 import googlestore from "../../assets/icons/gplay.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 	return (
@@ -71,16 +72,12 @@ const Footer = () => {
 						<a href="mailto:info@oyanow.ng">info@oyanow.ng</a>
 					</li>
 
-					<li>
-						<a href="./terms&condition.html" target="_blank">
-							Terms and Conditions
-						</a>
-					</li>
-					<li>
-						<a href="./privacy policy.html" target="_blank">
-							Privacy policy
-						</a>
-					</li>
+					<Link to={"../terms"}>
+						<li>Terms and Conditions</li>
+					</Link>
+					<Link to={"../privacy"}>
+						<li>Privacy policy</li>
+					</Link>
 				</ul>
 			</div>
 		</footer>

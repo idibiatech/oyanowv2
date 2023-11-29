@@ -24,13 +24,13 @@ const Hero = () => {
 					</div>
 				</h1>
 				<h2>
-					You need <span class="tagline">{text}</span> <Cursor />
+					You need <span className="tagline">{text}</span> <Cursor />
 				</h2>
 				<div className="left-hero-link-container" id="stores-wrapper">
-					<div class="stores stores-left">
+					<div className="stores stores-left">
 						<a href="https://play.google.com/store/apps/details?id=com.g360synergy.oyanow">
 							<img
-								class="store-images"
+								className="store-images"
 								src={googleButton}
 								alt="google play app download link"
 							/>
@@ -39,7 +39,7 @@ const Hero = () => {
 					<div className="stores stores-right">
 						<a href="https://apps.apple.com/ng/app/oyanow/id1248784384">
 							<img
-								class="store-images"
+								className="store-images"
 								src={appleButton}
 								alt="apple store app download link"
 							/>
@@ -51,7 +51,12 @@ const Hero = () => {
 						<img src={searchArrow} alt="" />
 					</div>
 					<div className="search-input-wrapper">
-						<input type="text" name="" id="" placeholder="Enter your address" />
+						<input
+							type="text"
+							name="address"
+							id=""
+							placeholder="Enter your address"
+						/>
 					</div>
 					<div className="search-btn-wrapper">
 						<div className="send-icon-wrapper">
@@ -78,7 +83,7 @@ const Hero = () => {
 
 					ease: "backInOut",
 				}}
-				class="right-hero-container hero-box"
+				className="right-hero-container hero-box"
 			>
 				<img
 					className="section-images"

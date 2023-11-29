@@ -6,12 +6,13 @@ import SectionFour from "../components/Sections/SectionFour";
 import Footer from "../components/Footer/Footer";
 
 import "./index.css";
-import GetStarted from "../components/GetStarted/GetStarted";
+
 import NavBar from "../components/Navigation/NavBar";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../Animations";
 import SignIn from "../components/GetStarted/SignIn";
 import CreateAccount from "../components/GetStarted/CreateAccount";
+import GetStarted from "../components/GetStarted/GetStarted";
 
 const HomePage = () => {
 	return (
@@ -32,7 +33,7 @@ const HomePage = () => {
 				<SectionFour />
 			</main>
 			<Footer />
-			<GetStarted />
+			{/* <GetStarted /> */}
 		</motion.div>
 	);
 };

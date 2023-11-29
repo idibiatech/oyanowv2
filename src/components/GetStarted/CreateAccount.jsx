@@ -97,7 +97,10 @@ const CreateAccount = () => {
 			</div>
 			<div>
 				<p>
-					Already have an account? <a href="">Sign in</a>
+					Already have an account?{" "}
+					<a href="">
+						<span className="highlightLink">Sign in</span>
+					</a>
 				</p>
 			</div>
 		</div>

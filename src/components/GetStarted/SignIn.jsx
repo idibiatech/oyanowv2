@@ -41,7 +41,11 @@ const SignIn = () => {
 			</div>
 
 			<p>
-				Already have an account? <a href="">Log In</a>
+				Already have an account?{" "}
+				<a href="">
+					{" "}
+					<span className="highlightLink2">Log In</span>{" "}
+				</a>
 			</p>
 		</div>
 	);

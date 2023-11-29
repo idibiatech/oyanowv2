@@ -2,6 +2,9 @@ import "./getStarted.css";
 import SignIn from "./SignIn";
 import EmailSignIn from "./EmailSignIn";
 import CreateAccount from "./CreateAccount";
+import AccountCreated from "./Accountcreated";
+import { BrowserRouter, Route } from "react-router-dom";
+
 {
 	/* <Router>
 <Switch>
@@ -10,6 +13,7 @@ import CreateAccount from "./CreateAccount";
 </Switch>
 </Router> */
 }
+
 const GetStarted = () => {
 	return <EmailSignIn />;
 };

@@ -4,20 +4,29 @@ import googleButton from "../../assets/icons/Button google.png";
 import searchArrow from "../../assets/icons/vector.png";
 import sendArrow from "../../assets/icons/sendArrow.png";
 import { motion } from "framer-motion";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Hero = () => {
+	const [text] = useTypewriter({
+		words: [
+			"Drinks delivered in minutes?",
+			"Food from your favorite restaurant?",
+			"A quick errand service?",
+		],
+		loop: {},
+	});
 	return (
-		<div class="hero-container">
-			<div class="left-hero-container hero-box">
+		<div className="hero-container">
+			<div className="left-hero-container hero-box">
 				<h1>
-					<div class="bold-heading">
+					<div className="bold-heading">
 						<h1>Express Delivery Service!</h1>
 					</div>
 				</h1>
 				<h2>
-					You need <span class="tagline"></span>
+					You need <span class="tagline">{text}</span> <Cursor />
 				</h2>
-				<div class="left-hero-link-container" id="stores-wrapper">
+				<div className="left-hero-link-container" id="stores-wrapper">
 					<div class="stores stores-left">
 						<a href="https://play.google.com/store/apps/details?id=com.g360synergy.oyanow">
 							<img
@@ -27,7 +36,7 @@ const Hero = () => {
 							/>
 						</a>
 					</div>
-					<div class="stores stores-right">
+					<div className="stores stores-right">
 						<a href="https://apps.apple.com/ng/app/oyanow/id1248784384">
 							<img
 								class="store-images"
@@ -72,7 +81,7 @@ const Hero = () => {
 				class="right-hero-container hero-box"
 			>
 				<img
-					class="section-images"
+					className="section-images"
 					src={heroBike}
 					alt="image of a delivery bike"
 				/>

@@ -15,7 +15,7 @@ const PcNav = () => {
 								<Link to={link.to}>{link.title}</Link>
 							</li>
 						);
-					})}{" "}
+					})}
 				</ul>
 			</div>
 		</div>

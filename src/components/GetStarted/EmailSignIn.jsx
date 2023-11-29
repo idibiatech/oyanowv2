@@ -41,8 +41,13 @@ const EmailSignIn = () => {
 				</div>
 
 				<div className="form-input-wrapper radio-wrapper">
-					<input type="checkbox" name="remember" id="" />
-					<span>Remember me</span>
+					<div>
+						<input type="checkbox" name="remember" id="" />
+						<span>Remember me</span>
+					</div>
+					<a className="forget" href="">
+						<span>Forgot Password</span>
+					</a>
 				</div>
 			</div>
 			<div className="gs-main-btn">
@@ -69,7 +74,11 @@ const EmailSignIn = () => {
 			</div>
 			<div>
 				<p>
-					Don't have an account? <a href="">Sign up</a>
+					Don't have an account?{" "}
+					<a href="">
+						{" "}
+						<span className="highlightLink2">Sign up</span>
+					</a>
 				</p>
 			</div>
 		</div>

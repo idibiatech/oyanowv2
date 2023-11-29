@@ -1,5 +1,11 @@
+.overflow-hidden {
+	overflow: hidden;
+}
 .menu-btn {
 	cursor: pointer;
+}
+.menu-btn img {
+	width: 1.5rem !important;
 }
 .mobile-nav-wrapper {
 	position: relative;

@@ -2,6 +2,8 @@ import { useState } from "react";
 import logo from "../../assets/images/logo.png";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, Routes, Route } from "react-router-dom";
+import cancel from "../../assets/icons/x-solid.svg";
+import ham from "../../assets/icons/bars-solid.svg";
 
 const MobileNav = () => {
 	const navLinks = [
@@ -47,7 +49,7 @@ const MobileNav = () => {
 					<img src={logo} alt="oyanow logo" />
 				</div>
 				<div className="menu-btn" onClick={toggleMenu}>
-					menu
+					<img src={ham} alt="toggle navigation button" />
 				</div>
 			</div>
 
@@ -66,18 +68,30 @@ const MobileNav = () => {
 									<img src={logo} alt="oyanow logo" />
 								</div>
 								<div className="menu-btn" onClick={toggleMenu}>
-									close
+									<img src={cancel} alt="cancel navigation button" />
 								</div>
 							</div>
 						</div>
 
-						<ul className="nav-links-wrapper">
+						<motion.ul
+							variants={contVar}
+							initial="initial"
+							animate="open"
+							exit="exit"
+							className="nav-links-wrapper"
+						>
 							{navLinks.map((link, index) => {
 								return (
-									<MobileNavLink key={index} title={link.title} to={link.to} />
+									<div className="overflow-hidden">
+										<MobileNavLink
+											key={index}
+											title={link.title}
+											to={link.to}
+										/>
+									</div>
 								);
 							})}
-						</ul>
+						</motion.ul>
 					</motion.nav>
 				)}
 			</AnimatePresence>
@@ -98,9 +112,21 @@ const staggeredVar = {
 		},
 	},
 };
+const contVar = {
+	initial: {
+		transition: {
+			staggerChildren: 0.1,
+		},
+	},
+	open: {
+		transition: {
+			staggerChildren: 0.1,
+		},
+	},
+};
 const MobileNavLink = ({ title, to }) => {
 	return (
-		<motion.li variants={staggeredVar} initial="initial" animate="open">
+		<motion.li variants={staggeredVar}>
 			<Link to={`${to}`}>{title}</Link>
 		</motion.li>
 	);
